@@ -1,0 +1,30 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Появление: масштаб + прозрачность -->
+    <Storyboard x:Key="FadeScaleIn">
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.4"/>
+        <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)" From="0.9" To="1" Duration="0:0:0.4"/>
+        <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)" From="0.9" To="1" Duration="0:0:0.4"/>
+    </Storyboard>
+
+    <!-- Пульсация для забронированных номеров -->
+    <Storyboard x:Key="PulseBorder" RepeatBehavior="Forever">
+        <DoubleAnimation Storyboard.TargetProperty="(Border.BorderThickness)" To="3" Duration="0:0:0.3" AutoReverse="True"/>
+        <ColorAnimation Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" 
+                        To="#FFB71C1C" Duration="0:0:0.3" AutoReverse="True"/>
+    </Storyboard>
+
+    <!-- Сдвиг панели деталей -->
+    <Storyboard x:Key="SlideDetails">
+        <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0,20,0,0" To="0" Duration="0:0:0.3" DecelerationRatio="0.7"/>
+        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.3"/>
+    </Storyboard>
+
+    <!-- Эффект нажатия кнопки -->
+    <Storyboard x:Key="ButtonClick" Duration="0:0:0.15">
+        <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)" To="0.97" AutoReverse="True"/>
+        <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)" To="0.97" AutoReverse="True"/>
+    </Storyboard>
+
+</ResourceDictionary>
