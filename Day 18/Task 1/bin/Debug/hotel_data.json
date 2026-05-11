@@ -1,0 +1,90 @@
+{
+  "Rooms": [
+    {
+      "Id": 101,
+      "Number": 101,
+      "PricePerNight": 2500.0,
+      "Status": 1
+    },
+    {
+      "Id": 102,
+      "Number": 102,
+      "PricePerNight": 2500.0,
+      "Status": 1
+    },
+    {
+      "Id": 103,
+      "Number": 103,
+      "PricePerNight": 2500.0,
+      "Status": 1
+    },
+    {
+      "Id": 104,
+      "Number": 104,
+      "PricePerNight": 2500.0,
+      "Status": 0
+    },
+    {
+      "Id": 105,
+      "Number": 105,
+      "PricePerNight": 2500.0,
+      "Status": 0
+    },
+    {
+      "Id": 106,
+      "Number": 106,
+      "PricePerNight": 2500.0,
+      "Status": 0
+    },
+    {
+      "Id": 107,
+      "Number": 107,
+      "PricePerNight": 2500.0,
+      "Status": 0
+    },
+    {
+      "Id": 108,
+      "Number": 108,
+      "PricePerNight": 2500.0,
+      "Status": 0
+    },
+    {
+      "Id": 109,
+      "Number": 109,
+      "PricePerNight": 2500.0,
+      "Status": 0
+    },
+    {
+      "Id": 110,
+      "Number": 110,
+      "PricePerNight": 2500.0,
+      "Status": 0
+    }
+  ],
+  "Bookings": [
+    {
+      "Id": 0,
+      "GuestName": "dfsdfsdf",
+      "RoomId": 101,
+      "CheckIn": "2026-05-11T00:00:00+03:00",
+      "CheckOut": "2026-05-12T00:00:00+03:00",
+      "Status": "Active"
+    },
+    {
+      "Id": 0,
+      "GuestName": "Немец Артём Сергеевич",
+      "RoomId": 102,
+      "CheckIn": "2026-05-11T00:00:00+03:00",
+      "CheckOut": "2026-05-12T00:00:00+03:00",
+      "Status": "Active"
+    },
+    {
+      "Id": 0,
+      "GuestName": "Немец Артём Сергеевтч",
+      "RoomId": 103,
+      "CheckIn": "2026-05-11T00:00:00+03:00",
+      "CheckOut": "2026-05-12T00:00:00+03:00",
+      "Status": "Active"
+    }
+  ]
+}
